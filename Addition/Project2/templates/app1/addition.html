@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition Form</title>
+</head>
+<body>
+    <form  method="post">
+        {% csrf_token %}
+        <label for="num1">Number 1:</label>
+        <input type="text" name="num1" id="num1"><br>
+        <label for="num2">Number 2:</label>
+        <input type="text" name="num2" id="num2"><br>
+        <input type="submit" name="submit" id="submit" value="Add">
+    </form>
+    
+    <h3>{{result}}</h3>
+    <!-- ginger -->
+</body>
+</html>
